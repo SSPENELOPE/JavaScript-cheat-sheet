@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript CHEAT SHEET</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css"/></link>
+ </head>
+
+
+ <!--Header-->
+ <header>
+    <h1>JavaScript Snippet Cheatsheet</h1>
+    <br>
+        <p>
+          Use this cheatsheet to help you remember your most used JavaScript syntax and semantics! 
+        </p>
+ </header>
+
+
+ <!--Begining of Flexbox's-->
+ <body>
+ <main>
+    <section class="wrapper">
+        <fieldset class="container">
+            <legend>Variables</legend>
+                <h2 class="card-head">JavaScript variable types</h2>
+                <div class="card">
+                    <code>
+                      var myVariable;//Declare your variable<br>
+                      myVariable = 20;//Assigning your variable a value<br>
+                      let myVariable = 20;//Can be reassigned but will cause error<br>
+                      const myVariable = 20;//Variable cannot be reassigned
+
+                    </code>
+                </div>
+        </fieldset>
+
+
+        <fieldset class="container">
+            <legend>JavaScript Primitive-Types</legend>
+            <h2 class="card-head">These are the generic types of variables</h2>
+            <div class="card">
+                <code>
+                   myNumber = 10;//This is a a number in JS, can also be decimal<br>
+                   myString = "10";//This is a string<br>
+                   myBoolean = true;//This is a boolean<br>
+                   myArray = ["1", "2", "3"];//This is an array<br>
+                   By inputing "console.log(typeof myVariable)" will tell you what Primitive-Types your variable is in the console.
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Arithmetic Operators</legend>
+            <h2 class="card-head">Mathamatical Comparison values</h2><br>
+            <div class="card">
+                <code>
+                    var x = 5, y = 10;<br>
+                    z = x + y; //performs addition and returns 15<br>
+                    z = y - x; //performs subtraction and returns 5<br>
+                    z = x * y; //performs multiplication and returns 50<br>
+                    z = y / x; //performs division and returns 2<br>
+                    z = x % 2; //returns division remainder 1 
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Comparison Operators</legend>
+            <h2 class="card-head">Used for "Booleans" and will return "True" or "False"</h2>
+            <div class="card">
+                <code>
+                    ==	Compares the equality of two operands without considering type.<br>
+                    ===	Compares equality of two operands with type.<br>
+                    !=	Compares inequality of two operands.<br>
+                    >	Returns a boolean value true if the left-side value is greater than the right-side value; otherwise, returns false.<br>
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Comparison Operators Cont.</legend>
+            <h2 class="card-head">Used for "Booleans" and will return "True" or "False"</h2>
+            <div class="card">
+                <code>
+                    <	Returns a boolean value true if the left-side value is less than the right-side value; otherwise, returns false.<br>
+                    >=	Returns a boolean value true if the left-side value is greater than or equal to the right-side value; otherwise, returns false.<br>
+                    <=	Returns a boolean value true if the left-side value is less than or equal to the right-side value; otherwise, returns false.
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Logcial Operators</legend>
+            <h2 class="card-head">Used to combine two or more conditions</h2>
+            <div class="card">
+                <code>
+                    &&	&& is known as AND operator. It checks whether two operands are non-zero or not (0, false, undefined, null or "" are considered as zero). It returns 1 if they are non-zero; otherwise, returns 0.<br><br>
+                    ||	|| is known as OR operator. It checks whether any one of the two operands is non-zero or not (0, false, undefined, null or "" is considered as zero). It returns 1 if any one of of them is non-zero; otherwise, returns 0.<br><br>
+                    !	! is known as NOT operator. It reverses the boolean result of the operand (or condition). !false returns true, and !true returns false.
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>JavaScript Arrays</legend>
+            <h2 class="card-head">Use this to help understand Array Functions</h2>
+            <div class="card">
+                <code>
+                   myArray = ["0", "1", "2", "3", "4"];//There are items in the array but the index starts at 0<br><br>
+                   console.log(myArray ["0"]);//This will get the first item in the array
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Array Methods</legend>
+            <h2 class="card-head">For this example we will have myArray = ["One", "Two", "three"];<br> and myArray2 = ["4", "5"];</h2>
+            <div class="card">
+                <code>
+                  .concact()<br>
+                  myNewArray = myArray.concact(myArray2);//This will Join the 2 arrays<br>
+                  .push()<br>
+                  var myArray = myArray.push("Four");//Will add to end of array<br>
+                  .pop()<br>
+                  myArray.pop();//WIll remove last item in array <br>
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Array Methods Cont.</legend>
+            <h2 class="card-head">For this example we will have myArray = ["One", "Two", "three"];<br> and myArray2 = ["4", "5"];</h2>
+            <div class="card">
+                <code>
+                  .unshift()<br>
+                  myArray.unshift("Zero");//Will add "Zero to the beginning of the array"<br>
+                  .sort();<br>
+                  myArray.sort();//This will return your sorted array<br>
+                  .slice()<br>
+                  myNewArray = myArray.slice(0,3);<br>
+                  myArray2 = [...myNewArray, "4", "5"];//Your array would now read 1-5;
+                </code>
+            </div>
+        </fieldset>
+
+
+        <fieldset class="container">
+            <legend>String Methods</legend>
+            <h2 class="card-head">For this example we will have var myString = "Hello";</h2>
+            <div class="card">
+                <code>
+                    .toUpperCase()<br>
+                    var myString = myString.toUpperCase();//Will make word CAPS.<br>
+                    .replace();<br>
+                    var myString = myString.replace("Hello", "World")//This will replace "hello" with "world"<br>
+                </code>
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Functions/Scopes</legend>
+            <h2 class="card-head">Use this to refer to funcitions</h2>
+            <div class="card">
+                <code>
+                    var shout = "shout";<br>
+
+                    function justShout() {<br>
+                      console.log(shout + ", " + shout);<br>
+                      return;<br>
+                    }<br>
+                
+                    function shoutItAllOut() {<br>
+                      console.log(shout + " it all out! ");<br>
+                      return;<br>
+                    }<br>
+                    
+                    justShout();<br>
+                    shoutItAllOut();//The variable is declared on a global scope and will apply to all "shout" variables<br>
+                </code>   
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>Functions/Scopes Cont.</legend>
+            <h2 class="card-head">Use this to refer to funcitions and scopes </h2>
+            <div class="card">
+                <code>
+                    function sayLions() {<br>
+                        var animal = "Lions"; <br>
+                        console.log(animal);<br>
+                        return;<br>
+                      }<br>
+                      
+                      function sayTigers() {<br>
+                        var animal = "Tigers"<br>
+                        console.log("and " + animal + " and"); <br>
+                        return;<br>
+                      }//Variables are withing the scope of the function and will only be applied to that function
+                </code>   
+            </div>
+        </fieldset>
+
+        <fieldset class="container">
+            <legend>For Loops</legend>
+            <h2 class="card-head">Use this to understand for loops </h2>
+            <div class="card">
+                <code>
+                    var students = ["John", "Jacob", "Jingle", "Himer", "Schmidt"];<br>
+                    var welcome = "Great to see you ";<br>
+                    
+                    for (i = 0; i < students.length; i++) {<br>
+                        console.log(welcome + students[i] + "?")<br> 
+                    }//This will continue to log the student names with the phrase until it reaches the array length<br>
+                    //"i" is index in which you are starting of ending
+                </code>   
+            </div>
+        </fieldset>
+
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <h1>MADE WITH HATE, COFFEE AND CSS</h1>
+    </footer>
+    
+
+ </main>
+ </body>
+ </html>
